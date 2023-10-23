@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import axios from "axios";
 import { useAuth } from "../../../context/Auth";
+import SearchInput from "../../Search/SearchInput";
+import NavMenu from "../Layout/NavMenu";
 
 const Cards = () => {
   const [auth, setAuth] = useAuth();
@@ -40,20 +42,11 @@ const Cards = () => {
   return (
     <Layout>
       <div className="flex justify-center">
-        <div className="flex-none w-80 min-h-full bg-indigo-950 text-white text-center pt-10">
-          <div className="flex flex-col w-3/4 mx-auto">
-            <div className="btn btn-outline bg-pink-500 text-black mb-5">
-              <Link to="/dashboard/user">Create Business Card</Link>
-            </div>
-            <div className="btn btn-outline bg-pink-500 text-black mb-5">
-              <Link to="/dashboard/user/cards">Business Cards</Link>
-            </div>
-            <div className="btn btn-outline bg-pink-500 text-black">
-              <Link to="/dashboard/user/cards">User</Link>
-            </div>
-          </div>
-        </div>
+        <NavMenu></NavMenu>
         <div className="grow min-h-full p-20 rounded text-white">
+          <div className="text-center mb-10">
+            <SearchInput></SearchInput>
+          </div>
           <div className="grid grid-cols-3 gap-4">
             {matched?.map((card) => (
               <Link

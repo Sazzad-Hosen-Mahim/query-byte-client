@@ -8,6 +8,11 @@ import { MdEmail } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiFillHome } from "react-icons/ai";
 import { HiCode } from "react-icons/hi";
+import { BiSolidBusiness } from "react-icons/bi";
+import { BiWorld } from "react-icons/bi";
+import { BiCategoryAlt } from "react-icons/bi";
+import { MdNaturePeople } from "react-icons/md";
+import NavMenu from "../Layout/NavMenu";
 
 const SingleCard = () => {
   const [card, setCard] = useState([]);
@@ -53,19 +58,7 @@ const SingleCard = () => {
   return (
     <Layout>
       <div className="flex ">
-        <div className="flex-none w-80 min-h-screen bg-indigo-950 text-white text-center pt-10">
-          <div className="flex flex-col w-3/4 mx-auto">
-            <div className="btn btn-outline bg-pink-500 text-black mb-5">
-              <Link to="/dashboard/user">Create Business Card</Link>
-            </div>
-            <div className="btn btn-outline bg-pink-500 text-black mb-5">
-              <Link to="/dashboard/user/cards">Business Cards</Link>
-            </div>
-            <div className="btn btn-outline bg-pink-500 text-black">
-              <Link to="/dashboard/user/cards">User</Link>
-            </div>
-          </div>
-        </div>
+        <NavMenu></NavMenu>
         <div className="grow min-h-full p-20 rounded text-white">
           <div className="flex justify-center">
             <figure>
@@ -77,9 +70,25 @@ const SingleCard = () => {
             </figure>
           </div>
           <div className="flex flex-col justify-center pt-5">
-            <h2 className="text-2xl flex font-bold mb-8">
+            <h2 className="text-2xl flex font-bold mb-8 text-fuchsia-600">
               <BsFillPersonLinesFill className="text-yellow-400 me-5"></BsFillPersonLinesFill>{" "}
               Name: {card.name}
+            </h2>
+            <h2 className="text-2xl flex font-bold mb-8 text-sky-500">
+              <BiSolidBusiness className="text-yellow-400 me-5"></BiSolidBusiness>{" "}
+              Company Name: {card.companyName}
+            </h2>
+            <h2 className="text-2xl flex  mb-8">
+              <BiWorld className="text-yellow-400 me-5"></BiWorld> Country:{" "}
+              {card.country}
+            </h2>
+            <h2 className="text-2xl flex  mb-8">
+              <MdNaturePeople className="text-yellow-400 me-5"></MdNaturePeople>{" "}
+              Business Nature: {card.businessNature}
+            </h2>
+            <h2 className="text-2xl flex  mb-8">
+              <BiCategoryAlt className="text-yellow-400 me-5"></BiCategoryAlt>{" "}
+              Interest: {card.interest}
             </h2>
             <h1 className="text-2xl flex mb-8">
               <MdEmail className="text-yellow-400 me-5"></MdEmail> Email:{"   "}

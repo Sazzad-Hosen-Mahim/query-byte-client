@@ -14,15 +14,18 @@ import AdminDashboard from "./components/Pages/Admin/AdminDashboard";
 import Cards from "./components/Pages/User/Cards";
 import SingleCard from "./components/Pages/User/SingleCard";
 import UpdateCard from "./components/Pages/User/UpdateCard";
+import Search from "./components/Pages/Search";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
+
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/dashboard" element={<PrivateRoute></PrivateRoute>}>
           <Route path="user" element={<Dashboard></Dashboard>}></Route>
+          <Route path="user/search" element={<Search></Search>}></Route>
           <Route
             path="user/update/:slug"
             element={<UpdateCard></UpdateCard>}

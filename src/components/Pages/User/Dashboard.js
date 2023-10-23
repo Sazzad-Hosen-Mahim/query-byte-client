@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../../context/Auth";
+import NavMenu from "../Layout/NavMenu";
 
 const Dashboard = () => {
   const [auth, setAuth] = useAuth();
@@ -11,6 +12,10 @@ const Dashboard = () => {
   const navigate = useNavigate();
 
   const [name, setName] = useState("");
+  const [companyName, setCompanyName] = useState("");
+  const [country, setCountry] = useState("");
+  const [businessNature, setBusinessNature] = useState("");
+  const [interest, setInterest] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
@@ -24,6 +29,10 @@ const Dashboard = () => {
     try {
       const cardData = new FormData();
       cardData.append("name", name);
+      cardData.append("companyName", companyName);
+      cardData.append("country", country);
+      cardData.append("businessNature", businessNature);
+      cardData.append("interest", interest);
       cardData.append("email", email);
       cardData.append("phone", phone);
       cardData.append("address", address);
@@ -31,7 +40,18 @@ const Dashboard = () => {
       cardData.append("photo", photo);
       cardData.append("user", user);
 
-      console.log(name, email, phone, user, description, address);
+      console.log(
+        name,
+        companyName,
+        businessNature,
+        interest,
+        country,
+        email,
+        phone,
+        user,
+        description,
+        address
+      );
 
       const res = await axios.post(
         `${process.env.REACT_APP_API}/api/v1/businessCard/create-business-card`,
@@ -52,19 +72,7 @@ const Dashboard = () => {
   return (
     <Layout title={"Dashboard - Query Bytes"}>
       <div className="flex justify-center">
-        <div className="flex-none w-80 min-h-full bg-indigo-950 text-white text-center pt-10">
-          <div className="flex flex-col w-3/4 mx-auto">
-            <div className="btn btn-outline bg-pink-500 text-black mb-5">
-              <Link to="/dashboard/user">Create Business Card</Link>
-            </div>
-            <div className="btn btn-outline bg-pink-500 text-black mb-5">
-              <Link to="/dashboard/user/cards">Business Cards</Link>
-            </div>
-            <div className="btn btn-outline bg-pink-500 text-black">
-              <Link to="/dashboard/user/cards">User</Link>
-            </div>
-          </div>
-        </div>
+        <NavMenu></NavMenu>
         <div className="grow h-screen p-20 rounded text-white">
           <div className="form-control w-1/3  rounded-lg bg-indigo-950 p-12">
             <h1 className="text-lg text-pink-500 text-center font-semibold mb-4">
@@ -100,6 +108,46 @@ const Dashboard = () => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Enter your name"
+                className="input input-bordered input-info w-full bg-black mt-3"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                value={companyName}
+                onChange={(e) => setCompanyName(e.target.value)}
+                placeholder="Enter your company Name"
+                className="input input-bordered input-info w-full bg-black mt-3"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                value={country}
+                onChange={(e) => setCountry(e.target.value)}
+                placeholder="Enter your country"
+                className="input input-bordered input-info w-full bg-black mt-3"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                value={businessNature}
+                onChange={(e) => setBusinessNature(e.target.value)}
+                placeholder="Enter your business nature"
+                className="input input-bordered input-info w-full bg-black mt-3"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                value={interest}
+                onChange={(e) => setInterest(e.target.value)}
+                placeholder="Enter your interested field"
                 className="input input-bordered input-info w-full bg-black mt-3"
                 required
               />
