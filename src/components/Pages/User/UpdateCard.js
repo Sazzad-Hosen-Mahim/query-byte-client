@@ -96,7 +96,7 @@ const UpdateCard = () => {
     <Layout title={"Dashboard - Query Bytes"}>
       <div className="flex justify-center">
         <NavMenu></NavMenu>
-        <div className="grow h-screen p-20 rounded text-white">
+        <div className="grow h-fit p-20 rounded text-white">
           <div className="form-control w-1/3  rounded-lg bg-indigo-950 p-12">
             <h1 className="text-lg text-pink-500 text-center font-semibold mb-4">
               Update Business Card

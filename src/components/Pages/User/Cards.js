@@ -47,7 +47,7 @@ const Cards = () => {
           <div className="text-center mb-10">
             <SearchInput></SearchInput>
           </div>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 gap-6">
             {matched?.map((card) => (
               <Link
                 className="card  w-96 shadow-xl"
@@ -57,15 +57,15 @@ const Cards = () => {
                 <div>
                   <figure>
                     <img
-                      className="max-h-96 w-full"
+                      className="h-96 w-full"
                       src={`${process.env.REACT_APP_API}/api/v1/businessCard/card-photo/${card._id}`}
                       alt="Business card"
                     />
                   </figure>
-                  <div className="card-body bg-sky-600">
-                    <h2 className="card-title">{card.name}</h2>
-                    <p>{card.email}</p>
-                    <p>{card.description}</p>
+                  <div className="card-body h-48 bg-sky-600">
+                    <h2 className="card-title text-2xl">{card.name}</h2>
+                    <p className="text-xl">{card.email}</p>
+                    <p className="font-bold">{card.companyName}</p>
                   </div>
                 </div>
               </Link>
