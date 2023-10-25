@@ -93,7 +93,7 @@ const UpdateCard = () => {
     //eslint-disable-next-line
   }, []);
   return (
-    <Layout title={"Dashboard - Query Bytes"}>
+    <Layout title={"Update Card - Query Bytes"}>
       <div className="flex justify-center">
         <NavMenu></NavMenu>
         <div className="grow h-fit p-20 rounded text-white">

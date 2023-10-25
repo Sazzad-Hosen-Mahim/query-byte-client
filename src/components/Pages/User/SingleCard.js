@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Layout from "../Layout/Layout";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
@@ -13,9 +13,12 @@ import { BiWorld } from "react-icons/bi";
 import { BiCategoryAlt } from "react-icons/bi";
 import { MdNaturePeople } from "react-icons/md";
 import NavMenu from "../Layout/NavMenu";
+import { useReactToPrint } from "react-to-print";
 
 const SingleCard = () => {
   const [card, setCard] = useState([]);
+
+  const componentRef = useRef();
   const params = useParams();
   const navigate = useNavigate();
 
@@ -55,11 +58,18 @@ const SingleCard = () => {
     }
   };
   console.log(card);
+  //handling print
+  const handlePrint = useReactToPrint({
+    content: () => componentRef.current,
+  });
   return (
-    <Layout>
-      <div className="flex ">
+    <Layout title={"Business Card - Query Bytes"}>
+      <div className="flex">
         <NavMenu></NavMenu>
-        <div className="grow min-h-full p-20 rounded text-white">
+        <div
+          className="grow min-h-full p-20 rounded text-white"
+          ref={componentRef}
+        >
           <div className="flex justify-center">
             <figure>
               <img
@@ -120,7 +130,12 @@ const SingleCard = () => {
           >
             Delete
           </button>
-          <button className="btn btn-accent btn-outline me-4">Print</button>
+          <button
+            className="btn btn-accent btn-outline me-4"
+            onClick={handlePrint}
+          >
+            Print
+          </button>
         </div>
       </div>
     </Layout>

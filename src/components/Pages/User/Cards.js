@@ -17,10 +17,11 @@ const Cards = () => {
   cards.forEach((card) => {
     if (card?.user?._id === auth?.user?.id) {
       matched.push(card);
+      // setCards(card);
     }
   });
   // console.log(matched);
-  // console.log(cards);
+  console.log(cards);
 
   //get all cards
   const getAllCards = async () => {
@@ -40,10 +41,10 @@ const Cards = () => {
     getAllCards();
   }, []);
   return (
-    <Layout>
+    <Layout title={"All Business Card - Query Bytes"}>
       <div className="flex justify-center">
         <NavMenu></NavMenu>
-        <div className="grow min-h-full p-20 rounded text-white">
+        <div className="grow min-h-screen p-20 rounded text-white">
           <div className="text-center mb-10">
             <SearchInput></SearchInput>
           </div>
@@ -63,7 +64,7 @@ const Cards = () => {
                     />
                   </figure>
                   <div className="card-body h-48 bg-sky-600">
-                    <h2 className="card-title text-2xl">{card.name}</h2>
+                    <h2 className="card-title text-xl">{card.name}</h2>
                     <p className="text-xl">{card.email}</p>
                     <p className="font-bold">{card.companyName}</p>
                   </div>
