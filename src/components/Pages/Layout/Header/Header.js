@@ -76,6 +76,11 @@ const Header = () => {
               Services
             </Link>
           </li>
+          <li className="mx-2">
+            <Link className="hover:text-black" to="/pricing">
+              Pricing
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="navbar-end">

@@ -1,8 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Pages/Home/Home";
-import About from "./components/Pages/Single/About/About";
-import Contact from "./components/Pages/Single/Contact/Contact";
+
 import PageNotFound from "./components/Pages/Error/PageNotFound";
 import Login from "./components/Pages/Login/Login";
 import Registration from "./components/Pages/Registration/Registration";
@@ -15,14 +14,31 @@ import Cards from "./components/Pages/User/Cards";
 import SingleCard from "./components/Pages/User/SingleCard";
 import UpdateCard from "./components/Pages/User/UpdateCard";
 import Search from "./components/Pages/Search";
+import ServiceSingle from "./components/Pages/Single/ServiceSingle";
+import ContactSingle from "./components/Pages/Single/ContactSingle";
+import AboutSingle from "./components/Pages/Single/AboutSingle";
+import PricingSingle from "./components/Pages/Single/PricingSingle";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
+        <Route
+          path="/services"
+          element={<ServiceSingle></ServiceSingle>}
+        ></Route>
+        <Route
+          path="/contact"
+          element={<ContactSingle></ContactSingle>}
+        ></Route>
+        <Route
+          path="/pricing"
+          element={<PricingSingle></PricingSingle>}
+        ></Route>
 
-        <Route path="/about" element={<About></About>}></Route>
+        <Route path="/about" element={<AboutSingle></AboutSingle>}></Route>
+        {/* dashboard */}
         <Route path="/dashboard" element={<PrivateRoute></PrivateRoute>}>
           <Route path="user" element={<Dashboard></Dashboard>}></Route>
           <Route path="user/search" element={<Search></Search>}></Route>
@@ -42,7 +58,7 @@ function App() {
             element={<AdminDashboard></AdminDashboard>}
           ></Route>
         </Route>
-        <Route path="/contact" element={<Contact></Contact>}></Route>
+
         <Route path="/login" element={<Login></Login>}></Route>
         <Route
           path="/registration"

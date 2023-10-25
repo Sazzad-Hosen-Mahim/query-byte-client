@@ -1,14 +1,22 @@
 import React from "react";
 import Layout from "../Layout/Layout";
 import { useAuth } from "../../../context/Auth";
+import Header from "./Header";
+import Services from "./Services";
+import About from "./About";
+import Pricing from "./Pricing";
+import Contact from "./Contact";
 
 const Home = () => {
   const [auth, setAuth] = useAuth();
   // console.log(auth?.user?.id);
   return (
     <Layout>
-      <h1>This is home page</h1>
-      <pre>{JSON.stringify(auth, null, 4)}</pre>
+      <Header></Header>
+      <Services></Services>
+      <About></About>
+      <Pricing></Pricing>
+      <Contact></Contact>
     </Layout>
   );
 };
