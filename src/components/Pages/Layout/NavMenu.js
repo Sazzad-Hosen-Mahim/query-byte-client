@@ -15,6 +15,9 @@ const NavMenu = () => {
         <div className="btn  btn-info btn-outline nav-menu-button text-black mb-5">
           <Link to="/dashboard/user/cards">All Business Cards</Link>
         </div>
+        {/* <div className="btn  btn-info btn-outline nav-menu-button text-black mb-5">
+          <Link to="/dashboard/scan">Scan Card</Link>
+        </div> */}
       </div>
     </div>
   );

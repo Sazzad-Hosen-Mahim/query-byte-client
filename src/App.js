@@ -19,6 +19,7 @@ import ContactSingle from "./components/Pages/Single/ContactSingle";
 import AboutSingle from "./components/Pages/Single/AboutSingle";
 import PricingSingle from "./components/Pages/Single/PricingSingle";
 import User from "./components/Pages/User/User";
+import Capture from "./components/Pages/Scan/Capture";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         {/* dashboard */}
         <Route path="/dashboard" element={<PrivateRoute></PrivateRoute>}>
           <Route path="create-card" element={<Dashboard></Dashboard>}></Route>
+          <Route path="scan" element={<Capture></Capture>}></Route>
           <Route path="user" element={<User></User>}></Route>
           <Route path="user/search" element={<Search></Search>}></Route>
           <Route

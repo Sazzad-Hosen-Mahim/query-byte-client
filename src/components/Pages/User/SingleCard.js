@@ -57,7 +57,7 @@ const SingleCard = () => {
       toast.error("Something went wrong while tried to delete a card");
     }
   };
-  console.log(card);
+  // console.log(card);
   //handling print
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,

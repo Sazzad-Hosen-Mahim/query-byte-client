@@ -51,7 +51,7 @@ const UpdateCard = () => {
         `${process.env.REACT_APP_API}/api/v1/businessCard/update-business-card/${id}`,
         cardData
       );
-      console.log(res);
+      // console.log(res);
       if (res && res?.data?.success) {
         toast.success("Card Updated successfully");
         navigate(`/dashboard/user/cards`);

@@ -57,7 +57,7 @@ const Dashboard = () => {
         `${process.env.REACT_APP_API}/api/v1/businessCard/create-business-card`,
         cardData
       );
-      console.log(res);
+      // console.log(res);
       if (res && res?.data?.success) {
         toast.success("Card created successfully");
         navigate("/dashboard/user/cards");

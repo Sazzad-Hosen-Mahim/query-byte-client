@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="flex">
+    <div className="lg:flex">
       <div className="flex-initial w-2/4 px-20 mt-44 ms-6 ">
         <h1 className="text-7xl text-bg-zinc-200">
           Welcome to <span className="text-indigo-500">Query Bytes.</span>

@@ -21,7 +21,7 @@ const Cards = () => {
     }
   });
   // console.log(matched);
-  console.log(cards);
+  // console.log(cards);
 
   //get all cards
   const getAllCards = async () => {
