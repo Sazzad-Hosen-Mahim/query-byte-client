@@ -4,7 +4,7 @@ import Layout from "../Layout/Layout";
 const PricingSingle = () => {
   return (
     <Layout>
-      <section class="text-gray-600 body-font overflow-hidden lg:mt-24">
+      <section class="text-white body-font overflow-hidden lg:mt-24">
         <h1 className="text-center text-sky-500 text-5xl font-bold">PRICING</h1>
         <hr className="w-5/6 mx-auto mt-7" />
         <div class="container px-5 py-24 mx-auto">
@@ -17,7 +17,7 @@ const PricingSingle = () => {
                 <h1 class="text-5xl text-red-500 pb-4 mb-4 border-b border-white leading-none">
                   Free
                 </h1>
-                <p class="flex items-center text-gray-600 mb-2">
+                <p class="flex items-center text-white mb-2 mt-5">
                   <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                     <svg
                       fill="none"
@@ -31,9 +31,9 @@ const PricingSingle = () => {
                       <path d="M20 6L9 17l-5-5"></path>
                     </svg>
                   </span>
-                  Vexillologist pitchfork
+                  Limited amount of storage
                 </p>
-                <p class="flex items-center text-gray-600 mb-2">
+                <p class="flex items-center text-white mb-2">
                   <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                     <svg
                       fill="none"
@@ -47,9 +47,9 @@ const PricingSingle = () => {
                       <path d="M20 6L9 17l-5-5"></path>
                     </svg>
                   </span>
-                  Tumeric plaid portland
+                  User friendly design
                 </p>
-                <p class="flex items-center text-gray-600 mb-6">
+                <p class="flex items-center text-white mb-6">
                   <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                     <svg
                       fill="none"
@@ -63,7 +63,7 @@ const PricingSingle = () => {
                       <path d="M20 6L9 17l-5-5"></path>
                     </svg>
                   </span>
-                  Mixtape chillwave tumeric
+                  Upgrade anytime
                 </p>
                 <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">
                   Button
@@ -79,9 +79,6 @@ const PricingSingle = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
                 </button>
-                <p class="text-xs text-gray-500 mt-3">
-                  Literally you probably haven't heard of them jean shorts.
-                </p>
               </div>
             </div>
             <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
@@ -98,7 +95,7 @@ const PricingSingle = () => {
                     /mo
                   </span>
                 </h1>
-                <p class="flex items-center text-gray-600 mb-2">
+                <p class="flex items-center text-white mb-2 mt-5">
                   <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                     <svg
                       fill="none"
@@ -112,9 +109,9 @@ const PricingSingle = () => {
                       <path d="M20 6L9 17l-5-5"></path>
                     </svg>
                   </span>
-                  Vexillologist pitchfork
+                  Enhanced Card Storage
                 </p>
-                <p class="flex items-center text-gray-600 mb-2">
+                <p class="flex items-center text-white mb-2">
                   <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                     <svg
                       fill="none"
@@ -128,9 +125,9 @@ const PricingSingle = () => {
                       <path d="M20 6L9 17l-5-5"></path>
                     </svg>
                   </span>
-                  Tumeric plaid portland
+                  Gain access to premium features
                 </p>
-                <p class="flex items-center text-gray-600 mb-2">
+                <p class="flex items-center text-white mb-2">
                   <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                     <svg
                       fill="none"
@@ -144,9 +141,9 @@ const PricingSingle = () => {
                       <path d="M20 6L9 17l-5-5"></path>
                     </svg>
                   </span>
-                  Hexagon neutra unicorn
+                  Increased Security
                 </p>
-                <p class="flex items-center text-gray-600 mb-6">
+                <p class="flex items-center text-white mb-6">
                   <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                     <svg
                       fill="none"
@@ -160,7 +157,7 @@ const PricingSingle = () => {
                       <path d="M20 6L9 17l-5-5"></path>
                     </svg>
                   </span>
-                  Mixtape chillwave tumeric
+                  Seamless Integration
                 </p>
                 <button class="flex items-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">
                   Button
@@ -176,9 +173,6 @@ const PricingSingle = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
                 </button>
-                <p class="text-xs text-gray-500 mt-3">
-                  Literally you probably haven't heard of them jean shorts.
-                </p>
               </div>
             </div>
             <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
@@ -192,7 +186,7 @@ const PricingSingle = () => {
                     /mo
                   </span>
                 </h1>
-                <p class="flex items-center text-gray-600 mb-2">
+                <p class="flex items-center text-white mb-2 mt-5">
                   <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                     <svg
                       fill="none"
@@ -206,9 +200,9 @@ const PricingSingle = () => {
                       <path d="M20 6L9 17l-5-5"></path>
                     </svg>
                   </span>
-                  Vexillologist pitchfork
+                  Team Collaboration
                 </p>
-                <p class="flex items-center text-gray-600 mb-2">
+                <p class="flex items-center text-white mb-2">
                   <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                     <svg
                       fill="none"
@@ -222,9 +216,9 @@ const PricingSingle = () => {
                       <path d="M20 6L9 17l-5-5"></path>
                     </svg>
                   </span>
-                  Tumeric plaid portland
+                  Custom Branding
                 </p>
-                <p class="flex items-center text-gray-600 mb-2">
+                <p class="flex items-center text-white mb-2">
                   <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                     <svg
                       fill="none"
@@ -240,7 +234,7 @@ const PricingSingle = () => {
                   </span>
                   Hexagon neutra unicorn
                 </p>
-                <p class="flex items-center text-gray-600 mb-2">
+                <p class="flex items-center text-white mb-2">
                   <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                     <svg
                       fill="none"
@@ -254,24 +248,9 @@ const PricingSingle = () => {
                       <path d="M20 6L9 17l-5-5"></path>
                     </svg>
                   </span>
-                  Vexillologist pitchfork
+                  Advanced Analytics
                 </p>
-                <p class="flex items-center text-gray-600 mb-6">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Mixtape chillwave tumeric
-                </p>
+
                 <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">
                   Button
                   <svg
@@ -286,9 +265,6 @@ const PricingSingle = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
                 </button>
-                <p class="text-xs text-gray-500 mt-3">
-                  Literally you probably haven't heard of them jean shorts.
-                </p>
               </div>
             </div>
             <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
@@ -302,7 +278,7 @@ const PricingSingle = () => {
                     /mo
                   </span>
                 </h1>
-                <p class="flex items-center text-gray-600 mb-2">
+                <p class="flex items-center text-white mb-2 mt-5">
                   <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                     <svg
                       fill="none"
@@ -316,9 +292,9 @@ const PricingSingle = () => {
                       <path d="M20 6L9 17l-5-5"></path>
                     </svg>
                   </span>
-                  Vexillologist pitchfork
+                  Unlimited VIP Access
                 </p>
-                <p class="flex items-center text-gray-600 mb-2">
+                <p class="flex items-center text-white mb-2">
                   <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                     <svg
                       fill="none"
@@ -332,9 +308,9 @@ const PricingSingle = () => {
                       <path d="M20 6L9 17l-5-5"></path>
                     </svg>
                   </span>
-                  Tumeric plaid portland
+                  pecial package allows for personalized feature
                 </p>
-                <p class="flex items-center text-gray-600 mb-2">
+                <p class="flex items-center text-white mb-32">
                   <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                     <svg
                       fill="none"
@@ -348,40 +324,9 @@ const PricingSingle = () => {
                       <path d="M20 6L9 17l-5-5"></path>
                     </svg>
                   </span>
-                  Hexagon neutra unicorn
+                  Dedicated Account Manager
                 </p>
-                <p class="flex items-center text-gray-600 mb-2">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Vexillologist pitchfork
-                </p>
-                <p class="flex items-center text-gray-600 mb-6">
-                  <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      class="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Mixtape chillwave tumeric
-                </p>
+
                 <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">
                   Button
                   <svg
@@ -396,9 +341,6 @@ const PricingSingle = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
                 </button>
-                <p class="text-xs text-gray-500 mt-3">
-                  Literally you probably haven't heard of them jean shorts.
-                </p>
               </div>
             </div>
           </div>

@@ -59,11 +59,11 @@ const Contact = () => {
               </button>
             </div>
             <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-              <a class="text-indigo-500">example@email.com</a>
+              <a class="text-indigo-500">sajjadhosenmahim@gmail.com</a>
               <p class="leading-normal my-5">
-                49 Smith St.
+                Fatepur-4330, Hathazari
                 <br />
-                Saint Cloud, MN 56301
+                Chattogram, Bangladesh
               </p>
               <span class="inline-flex">
                 <a class="text-gray-500">

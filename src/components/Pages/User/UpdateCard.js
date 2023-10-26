@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import Layout from "../Layout/Layout";
 import { toast } from "react-toastify";
 import axios from "axios";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useAuth } from "../../../context/Auth";
 import NavMenu from "../Layout/NavMenu";
+import "./UpdateCard.css";
 
 const UpdateCard = () => {
   const [auth, setAuth] = useAuth();
@@ -97,7 +98,7 @@ const UpdateCard = () => {
       <div className="flex justify-center">
         <NavMenu></NavMenu>
         <div className="grow h-fit p-20 rounded text-white">
-          <div className="form-control w-1/3  rounded-lg bg-indigo-950 p-12">
+          <div className="form-control w-1/3  rounded-lg update-card-bg p-12">
             <h1 className="text-lg text-pink-500 text-center font-semibold mb-4">
               Update Business Card
             </h1>

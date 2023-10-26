@@ -18,17 +18,22 @@ const AboutSingle = () => {
               src={aboutImg}
             />
           </div>
-          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 class="title-font text-5xl md:text-3xl lg:4xl sm:text-3xl mb-6 font-medium text-yellow-400">
-              Before they sold out
+          <div class="mt-20 lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <h1 class="font-bold title-font text-5xl md:text-3xl lg:text-5xl sm:text-3xl mb-6  text-yellow-400">
+              About Us: Your Trusted
               <br class="hidden lg:inline-block" />
-              readymade gluten
+              Business Card Management Solution
             </h1>
-            <p class="leading-relaxed text-white">
-              Copper mug try-hard pitchfork pour-over freegan heirloom neutra
-              air plant cold-pressed tacos poke beard tote bag. Heirloom echo
-              park mlkshk tote bag selvage hot chicken authentic tumeric
-              truffaut hexagon try-hard chambray.
+            <p class="mt-5 leading-relaxed text-white text-lg">
+              Discover our story at the forefront of digital business card
+              management. We're dedicated to simplifying contact management,
+              offering innovative solutions that streamline your networking
+              experience. At the heart of our mission lies a commitment to
+              revolutionizing contact management. With a passion for innovation,
+              we've built a dynamic platform that simplifies business card
+              storage and access. Our journey is rooted in making networking
+              effortless and efficient, empowering you to connect, engage, and
+              grow your professional relationships with ease.
             </p>
           </div>
         </div>

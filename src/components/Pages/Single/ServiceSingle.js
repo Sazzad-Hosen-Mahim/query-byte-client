@@ -17,7 +17,7 @@ const ServiceSingle = () => {
             <div class="p-4 md:w-1/3">
               <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <img
-                  class="lg:h-72 md:h-36 w-full object-fit object-center"
+                  class="lg:h-80 md:h-36 w-full object-fit object-center"
                   src={serviceImg1}
                   alt="blog"
                 />
@@ -25,12 +25,13 @@ const ServiceSingle = () => {
                   <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     CATEGORY
                   </h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                    The Catalyzer
+                  <h1 class="title-font text-xl font-medium text-sky-400 mb-3">
+                    Privacy
                   </h1>
-                  <p class="leading-relaxed mb-3">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
+                  <p class="leading-relaxed mb-10 text-white">
+                    Privacy services safeguard user information, implementing
+                    strict data protection measures to ensure confidentiality
+                    and compliance with privacy regulations.
                   </p>
                   <div class="flex items-center flex-wrap ">
                     <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
@@ -84,7 +85,7 @@ const ServiceSingle = () => {
             <div class="p-4 md:w-1/3">
               <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <img
-                  class="lg:h-72 md:h-36 w-full object-fit object-center"
+                  class="lg:h-80 md:h-36 w-full object-fit object-center"
                   src={serviceImg2}
                   alt="blog"
                 />
@@ -92,12 +93,13 @@ const ServiceSingle = () => {
                   <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     CATEGORY
                   </h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                    The 400 Blows
+                  <h1 class="title-font text-xl font-medium text-sky-400 mb-3">
+                    Security
                   </h1>
-                  <p class="leading-relaxed mb-3">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
+                  <p class="leading-relaxed mb-10 text-white">
+                    Our Security services ensures the protection of sensitive
+                    business card data through encryption and access controls,
+                    maintaining confidentiality.
                   </p>
                   <div class="flex items-center flex-wrap">
                     <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
@@ -151,7 +153,7 @@ const ServiceSingle = () => {
             <div class="p-4 md:w-1/3">
               <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <img
-                  class="lg:h-72 md:h-36 w-full object-fit object-center"
+                  class="lg:h-80 md:h-36 w-full object-fit object-center"
                   src={serviceImg3}
                   alt="blog"
                 />
@@ -159,12 +161,13 @@ const ServiceSingle = () => {
                   <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     CATEGORY
                   </h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                    Shooting Stars
+                  <h1 class="title-font text-xl font-medium text-sky-400 mb-3">
+                    Storage
                   </h1>
-                  <p class="leading-relaxed mb-3">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
+                  <p class="leading-relaxed mb-10 text-white">
+                    Unlimited storage service provides ample space to store
+                    business cards, ensuring all data is easily accessible and
+                    never restricted by capacity limits.
                   </p>
                   <div class="flex items-center flex-wrap ">
                     <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">

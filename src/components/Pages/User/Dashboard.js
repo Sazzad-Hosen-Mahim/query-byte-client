@@ -74,8 +74,8 @@ const Dashboard = () => {
       <div className="flex justify-center">
         <NavMenu></NavMenu>
         <div className="grow h-fit p-20 rounded text-white">
-          <div className="form-control w-1/3  rounded-lg bg-indigo-950 p-12">
-            <h1 className="text-lg text-pink-500 text-center font-semibold mb-4">
+          <div className="form-control w-1/3  rounded-lg update-card-bg p-12">
+            <h1 className="text-lg card-headline text-center font-semibold mb-4">
               Create Business Card
             </h1>
             <label className="btn btn-outline-primary mb-3">

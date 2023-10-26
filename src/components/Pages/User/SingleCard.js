@@ -80,42 +80,42 @@ const SingleCard = () => {
             </figure>
           </div>
           <div className="flex flex-col justify-center pt-5">
-            <h2 className="text-2xl flex font-bold mb-8 text-fuchsia-600">
+            <h2 className="text-2xl flex font-bold mb-6 text-fuchsia-600">
               <BsFillPersonLinesFill className="text-yellow-400 me-5"></BsFillPersonLinesFill>{" "}
               Name: {card.name}
             </h2>
-            <h2 className="text-2xl flex font-bold mb-8 text-sky-500">
+            <h2 className="text-2xl flex font-bold mb-6 text-sky-500">
               <BiSolidBusiness className="text-yellow-400 me-5"></BiSolidBusiness>{" "}
               Company Name: {card.companyName}
             </h2>
-            <h2 className="text-2xl flex  mb-8">
+            <h2 className="text-2xl flex  mb-6">
               <BiWorld className="text-yellow-400 me-5"></BiWorld> Country:{" "}
               {card.country}
             </h2>
-            <h2 className="text-2xl flex  mb-8">
+            <h2 className="text-2xl flex  mb-6">
               <MdNaturePeople className="text-yellow-400 me-5"></MdNaturePeople>{" "}
               Business Nature: {card.businessNature}
             </h2>
-            <h2 className="text-2xl flex  mb-8">
+            <h2 className="text-2xl flex  mb-6">
               <BiCategoryAlt className="text-yellow-400 me-5"></BiCategoryAlt>{" "}
               Interest: {card.interest}
             </h2>
-            <h1 className="text-2xl flex mb-8">
+            <h1 className="text-2xl flex mb-6">
               <MdEmail className="text-yellow-400 me-5"></MdEmail> Email:{"   "}
               {card.email}
             </h1>
-            <h1 className="text-2xl flex mb-8">
+            <h1 className="text-2xl flex mb-6">
               <BsFillTelephoneFill className="text-yellow-400 me-5"></BsFillTelephoneFill>{" "}
               Phone:{"   "}
               {card.phone}
             </h1>
-            <h1 className="text-2xl flex mb-8">
+            <h1 className="text-2xl flex mb-6">
               <AiFillHome className="text-yellow-400 me-5"></AiFillHome>{" "}
               Address:
               {"   "}
               {card.address}
             </h1>
-            <h1 className="text-2xl flex mb-8">
+            <h1 className="text-2xl flex mb-6">
               <HiCode className="text-yellow-400 me-5"></HiCode> Description:
               {"   "}
               {card.description}

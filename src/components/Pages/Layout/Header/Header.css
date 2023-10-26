@@ -1,5 +1,7 @@
 .navbar {
-     background-color: rgb(9, 105, 150);
+     /* background-color: rgb(9, 105, 150); */
+     background-color: #033366;
+
      font-size: 17px;
      font-weight: 500;
 }

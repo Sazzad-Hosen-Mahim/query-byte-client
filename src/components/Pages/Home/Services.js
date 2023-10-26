@@ -5,7 +5,7 @@ import serviceImg3 from "../../../Assets/img/Services/services3.png";
 
 const Services = () => {
   return (
-    <section class="text-gray-600 body-font mt-44 mb-24">
+    <section class="text-gray-600 body-font mt-60 mb-24">
       <h1 className="text-center text-5xl text-sky-500 font-bold">SERVICES</h1>
       <hr className="w-5/6 mx-auto mt-7" />
       <div class="container px-5 py-24 mx-auto">
@@ -21,12 +21,13 @@ const Services = () => {
                 <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                   CATEGORY
                 </h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                  The Catalyzer
+                <h1 class="title-font text-xl font-medium text-sky-400 mb-3">
+                  Privacy
                 </h1>
-                <p class="leading-relaxed mb-3">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
+                <p class="leading-relaxed mb-10 text-white">
+                  Privacy services safeguard user information, implementing
+                  strict data protection measures to ensure confidentiality and
+                  compliance with privacy regulations.
                 </p>
                 <div class="flex items-center flex-wrap ">
                   <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
@@ -88,12 +89,13 @@ const Services = () => {
                 <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                   CATEGORY
                 </h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                  The 400 Blows
+                <h1 class="title-font text-xl font-medium text-sky-400 mb-3">
+                  Security
                 </h1>
-                <p class="leading-relaxed mb-3">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
+                <p class="leading-relaxed mb-10 text-white">
+                  Our Security services ensures the protection of sensitive
+                  business card data through encryption and access controls,
+                  maintaining confidentiality.
                 </p>
                 <div class="flex items-center flex-wrap">
                   <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
@@ -155,12 +157,13 @@ const Services = () => {
                 <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                   CATEGORY
                 </h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                  Shooting Stars
+                <h1 class="title-font text-xl font-medium text-sky-400 mb-3">
+                  Storage
                 </h1>
-                <p class="leading-relaxed mb-3">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
+                <p class="leading-relaxed mb-10 text-white">
+                  Unlimited storage service provides ample space to store
+                  business cards, ensuring all data is easily accessible and
+                  never restricted by capacity limits.
                 </p>
                 <div class="flex items-center flex-wrap ">
                   <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">

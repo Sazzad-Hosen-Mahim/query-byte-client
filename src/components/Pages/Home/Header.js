@@ -6,10 +6,10 @@ const Header = () => {
   return (
     <div className="flex">
       <div className="flex-initial w-2/4 px-20 mt-44 ms-6 ">
-        <h1 className="text-7xl text-white">
+        <h1 className="text-7xl text-bg-zinc-200">
           Welcome to <span className="text-indigo-500">Query Bytes.</span>
         </h1>
-        <p className="mt-10 text-lg text-white">
+        <p className="mt-10 text-lg text-grey-800">
           Here you can save your necessary query and information search whenever
           you need it most. We give the most security of your information and we
           respect your privacy.
