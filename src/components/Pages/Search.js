@@ -10,9 +10,7 @@ const Search = () => {
   const [auth, setAuth] = useAuth();
   const [values, setValues] = useSearch();
 
-  // console.log(values.results);
   const allValues = values.results;
-  // console.log(allValues);
 
   //authorized search
   let authorized = [];
@@ -22,7 +20,6 @@ const Search = () => {
       authorized.push(authSearch);
     }
   });
-  console.log(authorized);
 
   return (
     <Layout title={"Search result"}>

@@ -20,8 +20,6 @@ const Cards = () => {
       // setCards(card);
     }
   });
-  // console.log(matched);
-  // console.log(cards);
 
   //get all cards
   const getAllCards = async () => {

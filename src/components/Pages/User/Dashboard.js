@@ -40,24 +40,11 @@ const Dashboard = () => {
       cardData.append("photo", photo);
       cardData.append("user", user);
 
-      console.log(
-        name,
-        companyName,
-        businessNature,
-        interest,
-        country,
-        email,
-        phone,
-        user,
-        description,
-        address
-      );
-
       const res = await axios.post(
         `${process.env.REACT_APP_API}/api/v1/businessCard/create-business-card`,
         cardData
       );
-      // console.log(res);
+
       if (res && res?.data?.success) {
         toast.success("Card created successfully");
         navigate("/dashboard/user/cards");

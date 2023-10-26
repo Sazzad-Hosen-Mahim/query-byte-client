@@ -5,7 +5,7 @@ import NavMenu from "../Layout/NavMenu";
 
 const User = () => {
   const [auth, setAuth] = useAuth();
-  console.log(auth);
+
   return (
     <Layout title={"User - Query Bytes"}>
       <div className="flex">

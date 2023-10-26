@@ -8,7 +8,6 @@ const Capture = () => {
   const captureImage = () => {
     const imageSrc = webcamRef.current.getScreenshot();
     // You can send this image to the server for storage.
-    console.log(imageSrc);
   };
 
   return (

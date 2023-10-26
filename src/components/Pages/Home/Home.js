@@ -9,7 +9,7 @@ import Contact from "./Contact";
 
 const Home = () => {
   const [auth, setAuth] = useAuth();
-  // console.log(auth?.user?.id);
+
   return (
     <Layout>
       <Header></Header>

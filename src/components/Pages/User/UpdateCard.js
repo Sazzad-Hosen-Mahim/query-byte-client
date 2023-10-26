@@ -45,8 +45,6 @@ const UpdateCard = () => {
       photo && cardData.append("photo", photo);
       cardData.append("user", user);
 
-      console.log(name, email, phone, user, description, address);
-
       const res = await axios.put(
         `${process.env.REACT_APP_API}/api/v1/businessCard/update-business-card/${id}`,
         cardData
@@ -70,7 +68,7 @@ const UpdateCard = () => {
       const { data } = await axios.get(
         `${process.env.REACT_APP_API}/api/v1/businessCard/get-business-card/${params.slug}`
       );
-      //  console.log(data.card.slug);
+
       setName(data.card.name);
       setCompanyName(data.card.companyName);
       setCountry(data.card.country);
@@ -87,7 +85,6 @@ const UpdateCard = () => {
       toast.error("Data can't read properties of undefined");
     }
   };
-  //   console.log(card);
 
   useEffect(() => {
     getSingleCard();

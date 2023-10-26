@@ -28,14 +28,12 @@ const SingleCard = () => {
         `${process.env.REACT_APP_API}/api/v1/businessCard/get-business-card/${params.slug}`
       );
 
-      //  console.log(data.card.slug);
       setCard(data.card);
     } catch (error) {
       console.log(error);
       toast.error("Data can't read properties of undefined");
     }
   };
-  //   console.log(card);
 
   useEffect(() => {
     getSingleCard();
@@ -57,7 +55,7 @@ const SingleCard = () => {
       toast.error("Something went wrong while tried to delete a card");
     }
   };
-  // console.log(card);
+
   //handling print
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
