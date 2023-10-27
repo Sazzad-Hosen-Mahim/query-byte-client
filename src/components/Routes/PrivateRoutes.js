@@ -11,7 +11,7 @@ export default function PrivateRoute() {
   useEffect(() => {
     const authCheck = async () => {
       const res = await axios.get(
-        `${process.env.REACT_APP_API}/api/v1/auth/user-auth`
+        `https://query-byte-server.vercel.app/api/v1/auth/user-auth`
       );
       if (res?.data?.ok) {
         setOk(true);

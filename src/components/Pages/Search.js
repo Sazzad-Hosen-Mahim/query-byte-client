@@ -49,7 +49,7 @@ const Search = () => {
                   <figure>
                     <img
                       className="max-h-96 w-full"
-                      src={`${process.env.REACT_APP_API}/api/v1/businessCard/card-photo/${card._id}`}
+                      src={`https://query-byte-server.vercel.app/api/v1/businessCard/card-photo/${card._id}`}
                       alt="Business card"
                     />
                   </figure>

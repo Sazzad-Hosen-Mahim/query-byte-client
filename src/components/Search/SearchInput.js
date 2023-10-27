@@ -11,7 +11,7 @@ const SearchInput = () => {
     e.preventDefault();
     try {
       const { data } = await axios.get(
-        `${process.env.REACT_APP_API}/api/v1/businessCard/search/${values.keyword}`
+        `https://query-byte-server.vercel.app/api/v1/businessCard/search/${values.keyword}`
       );
       setValues({ ...values, results: data });
       navigate("/dashboard/user/search");

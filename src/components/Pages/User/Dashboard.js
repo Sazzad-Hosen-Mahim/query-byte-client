@@ -41,7 +41,7 @@ const Dashboard = () => {
       cardData.append("user", user);
 
       const res = await axios.post(
-        `${process.env.REACT_APP_API}/api/v1/businessCard/create-business-card`,
+        `https://query-byte-server.vercel.app/api/v1/businessCard/create-business-card`,
         cardData
       );
 

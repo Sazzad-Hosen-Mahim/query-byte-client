@@ -20,7 +20,7 @@ const Registration = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        `${process.env.REACT_APP_API}/api/v1/auth/register`,
+        `https://query-byte-server.vercel.app/api/v1/auth/register`,
         { name, email, password, phone, address, answer }
       );
       if (res && res.data.success) {

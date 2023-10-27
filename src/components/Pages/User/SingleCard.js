@@ -25,7 +25,7 @@ const SingleCard = () => {
   const getSingleCard = async () => {
     try {
       const { data } = await axios.get(
-        `${process.env.REACT_APP_API}/api/v1/businessCard/get-business-card/${params.slug}`
+        `https://query-byte-server.vercel.app/api/v1/businessCard/get-business-card/${params.slug}`
       );
 
       setCard(data.card);
@@ -46,7 +46,7 @@ const SingleCard = () => {
       let answer = window.prompt("Are you sure want to delete this card?");
       if (!answer) return;
       const { data } = await axios.delete(
-        `${process.env.REACT_APP_API}/api/v1/businessCard/delete-card/${card._id}`
+        `https://query-byte-server.vercel.app/api/v1/businessCard/delete-card/${card._id}`
       );
       navigate(`/dashboard/user/cards`);
       toast("Card deleted successfully");
@@ -72,7 +72,7 @@ const SingleCard = () => {
             <figure>
               <img
                 className="max-h-96 w-full"
-                src={`${process.env.REACT_APP_API}/api/v1/businessCard/card-photo/${card._id}`}
+                src={`https://query-byte-server.vercel.app/api/v1/businessCard/card-photo/${card._id}`}
                 alt="Shoes"
               />
             </figure>

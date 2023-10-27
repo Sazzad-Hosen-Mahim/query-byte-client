@@ -46,7 +46,7 @@ const UpdateCard = () => {
       cardData.append("user", user);
 
       const res = await axios.put(
-        `${process.env.REACT_APP_API}/api/v1/businessCard/update-business-card/${id}`,
+        `https://query-byte-server.vercel.app/api/v1/businessCard/update-business-card/${id}`,
         cardData
       );
       // console.log(res);
@@ -66,7 +66,7 @@ const UpdateCard = () => {
   const getSingleCard = async () => {
     try {
       const { data } = await axios.get(
-        `${process.env.REACT_APP_API}/api/v1/businessCard/get-business-card/${params.slug}`
+        `https://query-byte-server.vercel.app/api/v1/businessCard/get-business-card/${params.slug}`
       );
 
       setName(data.card.name);
@@ -124,7 +124,7 @@ const UpdateCard = () => {
               ) : (
                 <div className="text-center">
                   <img
-                    src={`${process.env.REACT_APP_API}/api/v1/businessCard/card-photo/${id}`}
+                    src={`https://query-byte-server.vercel.app/api/v1/businessCard/card-photo/${id}`}
                     alt="profile pic"
                     className="h-40 img"
                   />

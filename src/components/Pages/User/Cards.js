@@ -25,7 +25,7 @@ const Cards = () => {
   const getAllCards = async () => {
     try {
       const { data } = await axios.get(
-        `${process.env.REACT_APP_API}/api/v1/businessCard/get-business-card`
+        `https://query-byte-server.vercel.app/api/v1/businessCard/get-business-card`
       );
       setCards(data.cards);
     } catch (error) {
@@ -57,7 +57,7 @@ const Cards = () => {
                   <figure>
                     <img
                       className="h-96 w-full"
-                      src={`${process.env.REACT_APP_API}/api/v1/businessCard/card-photo/${card._id}`}
+                      src={`https://query-byte-server.vercel.app/api/v1/businessCard/card-photo/${card._id}`}
                       alt="Business card"
                     />
                   </figure>
